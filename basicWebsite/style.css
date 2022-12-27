@@ -1,0 +1,89 @@
+/*Kutular Sabit genişlikte*/
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Kutu genişlikleri (Grid 12 Sütündan oluşur)*/
+.col-1{width: 8.33%;} /*(1/12) 1 Sütün kullanır*/
+.col-2{width: 16.66%;} /*(2/12) 2 Sütün kullanır*/
+.col-3{width: 25%;} /*(3/12) 3 Sütün kullanır*/
+.col-4{width: 33.33%;} /*(4/12) 4 Sütün kullanır*/
+.col-5{width: 41.66%;} /*(5/12) 5 Sütün kullanır*/
+.col-6{width: 50%;} /*(6/12) 6 Sütün kullanır*/
+.col-7{width: 58.33%;} /*(7/12) 7 Sütün kullanır*/
+.col-8{width: 66.66%;} /*(8/12) 8 Sütün kullanır*/
+.col-9{width: 75%;} /*(9/12) 9 Sütün kullanır*/
+.col-10{width: 83.33%;} /*(10/12) 10 Sütün kullanır*/
+.col-11{width: 91.66%;} /*(11/12) 11 Sütün kullanır*/
+.col-12{width: 100%;} /*(12/12) 12 Sütün kullanır*/
+
+/*Satırlar için CSS Kodu*/
+.row{
+    border: blue solid 2px;
+    background-color: cornflowerblue;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/*Satır içeriklerini temizletip tablo gibi gösterelim (yan yana gelmesin)*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*tepkisel resim*/
+img{
+    width: %100;
+    height: auto;
+}
+
+/*col- uygulanmış HTML komutlarını seç*/
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+/*500px den küçük ekranlar için*/
+@media screen and(max-width: 500px){
+    [class*="col-"] {width: 100%;}
+}
+
+/*Kutu Yükseklikleri*/
+#ust{min-height: 100px;}
+#menu{min-height: 50px;}
+#orta{min-height: 400px;}
+#alt{min-height: 50px;}
+
+#smiley{
+    width: 65px;
+}
+
+/*anamenu Kodları*/
+#menu #anamenu ul{
+    list-style: none;
+}
+
+#menu #anamenu ul li{
+    border: 1px solid black;
+    float: left;
+    width: %25;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#menu #anamenu a{
+    color:cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/*altmenu*/
+#alt #altmenu p{
+    text-align: center;
+}
