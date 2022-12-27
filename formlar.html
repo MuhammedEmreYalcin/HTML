@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="tr-TR">
+    <head>
+        <meta http-equiv"content-type" content"text/html; charset=utf-8" />
+        <title>Form İşlemeri</title>
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <body>   
+
+    <!-- required: Metin kutusunu doldurmayı zorunlu kılar --> 
+    <!-- action: Formdaki verilerin nereye gönderileceğini gösterir -->  
+    <!-- method: Verilerin gizli olup olmadığını gösterir -->   
+    <!-- autocomplete: Önceden girilen değerleri unutmaz -->
+    <!-- placeholder: Forma bir ipucu koyar -->
+
+        <h1>Üye Kayıt Formu:</h1>                            
+        <form name="kayit" action="kayit.php" method="get" autocomplete="on">
+            <table>  
+                <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" size="20" maxlength="30" placeholder="Ad Soyad" required><br></td></tr>                                    
+                <tr><td>Email:</td><td><input type="email" name="email" size="20" maxlength="30" placeholder="Email" required><br></td></tr>
+                <tr><td>Yasınız:</td><td><input type="number" name="yas" size="3" maxlength="5" placeholder="Yasınız" required><br></td></tr>
+                <tr><td>Web Sitesi:</td><td><input type="url" name="url" size="20" maxlength="30" placeholder="Web Sitesi"><br></td></tr><br>  
+                <tr><td>Sevdiğiniz Spor</td><td><input type="radio" name="spor">Futbol
+                <input type="radio" name="spor">Basketbol
+                <input type="radio" name="spor">Voleybol</td></tr>
+                <tr><td>Doğum Yeri:</td><td><select name="dyeri">
+                            <option>Adana</option>
+                            <option>Ankara</option>
+                            <option>Antalya</option>
+                <br>     
+                            <option selected>İstanbul</option>
+                </select></td></tr><br>
+                <tr><td>Öneri:</td><td><textarea name="öneri" rows="5" cols="20"></textarea><br></td></tr><br>
+                <tr><td></td><td><input type="submit" value="Gönder"><input type="reset" value="Temizle"></td></tr>                                  
+            </table>
+        </form>    
+    </body>
+</html>
