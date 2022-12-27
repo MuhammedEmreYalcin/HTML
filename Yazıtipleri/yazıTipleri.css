@@ -1,0 +1,39 @@
+#bir{
+   font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+#iki{
+    color: red;
+}
+
+#uc{
+    font-size: 30px;
+}
+
+#dort{
+    font-weight: bolder;
+}
+
+#bes{
+    font-style: italic;
+}
+
+#alti{
+    font-variant: small-caps;
+}
+
+#yedi{
+    text-transform: lowercase;
+}
+
+#sekiz{
+    text-decoration: underline;
+}
+
+#dokuz{
+    letter-spacing: 5em;
+}
+
+#on{
+    word-spacing: 10em;
+}
