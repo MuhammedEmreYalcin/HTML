@@ -1,0 +1,66 @@
+#KutuKenarlari{
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+
+#KutuBoyutu{
+    border-style: solid;
+    border-width: 5px;
+    width: 200px;
+    height:100px;
+
+}
+
+#Kutuicayari{
+    border-style: solid;
+    border-width: 5px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+#Kutudisayari{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Kutusabit{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+#Kuturengi{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#Kutukonum{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 50px;
+    position:fixed;
+    top: 10px;
+    left: 300px;
+    background-color: red;
+    z-index: -1;
+}
